@@ -1,0 +1,75 @@
+body {
+    /* ... existing styles ... */
+    background: linear-gradient(45deg, #FFD700, #ff6347, #74a0ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff8c00 !important;
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-secondary:hover {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #ff6347;
+    transition: background 0.3s ease;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+    transition: background-color 0.3s ease;
+}
+
+.card-footer:hover {
+    background-color: #e0e0e0;
+}
+
+.card-footer h5 {
+    transition: color 0.3s ease;
+}
+
+.card-footer h5:hover {
+    color: #ff4500;
+}
+
+.cursor-pointer {
+    transition: transform 0.3s ease;
+}
+
+.cursor-pointer:hover {
+    transform: scale(1.1);
+}
+
+/* Add more hover effects and colors as needed */
+

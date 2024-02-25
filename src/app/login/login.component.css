@@ -1,0 +1,17 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('/assets/images/young-man-woman-using-laptop.jpg');
+  background-size: cover;
+  background-position: center center;
+}

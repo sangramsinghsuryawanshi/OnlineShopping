@@ -1,0 +1,129 @@
+.team {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.team,
+img {
+  background: center;
+}
+
+.team h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  margin-bottom: 60px;
+}
+
+.team h1 span {
+  color: #fac031;
+  margin-left: 15px;
+  font-family:serif;
+}
+
+.team h1 span::after {
+  content: '';
+  width: 110%;
+  height: 2px;
+  background: #b9751b;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.team .team_box {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13%;
+}
+
+.team .team_box .profile {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+
+.team .team_box .profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover img {
+  border-radius: 20px;
+  margin-top: -330px;
+}
+
+.team .team_box .profile .info {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info {
+  top: 60%;
+}
+
+.team .team_box .profile .info .name1 {
+  color: #fac031;
+  margin-top: -20px;
+  font-size: 1rem;
+}
+
+.team .team_box .profile .info .bio {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  .team h1 {
+    font-size: 3rem;
+  }
+  
+  .team .team_box {
+    flex-wrap: wrap;
+  }
+  
+  .team .team_box .profile {
+    width: 45%;
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .team h1 {
+    font-size: 2.5rem;
+  }
+  
+  .team .team_box .profile {
+    width: 100%;
+  }
+}
